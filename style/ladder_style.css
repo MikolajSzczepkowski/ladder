@@ -78,7 +78,8 @@
 	color: #fff;
 }
 .bottom-main p {
-	margin-top: -37px;
+	margin-bottom: 5px;
+	background: #363636;
 }
 .ladder-box-wrapper{
 	padding: 0; 
@@ -100,6 +101,10 @@
 	border-top: 6px double #363636;
 	border-bottom: 2px solid #363636;
 }
+.border-menu.half:before{
+	border-top: 6px double #e43f3f;
+	border-bottom: 2px solid #e43f3f;
+}
 .ladder-box{
 	margin-bottom: 20px;
 }
@@ -110,8 +115,8 @@
 	width: 90%;
 	margin-left: 15px;
 	font-size: 12px;
-    font-style: italic;
-    color: #fff;
+	font-style: italic;
+	color: #fff;
 }
 .ladder-box table tr{
 	background: #e43f3f;
@@ -217,10 +222,14 @@ p.chat-message{
 	margin-top: 20px; 
 }
 @media screen and (min-width: 480px){
-	
+	.ladder-box table{
+		width: 70%;
+	}
 }
 @media screen and (min-width: 640px){
-	
+	.ladder-box table{
+		width: 60%;
+	}
 }
 @media screen and (min-width: 768px){
 	.top-row ul li{
@@ -241,6 +250,15 @@ p.chat-message{
 		border-left: 1px solid #d8d8d8;
 		border-right: 1px solid #d8d8d8; 
 	}
+	.bottom-main p:nth-of-type(1){
+		margin-top: -37px;
+	}
+	.bottom-main p:nth-of-type(3){
+		margin-top: -35px;
+	}
+	.ladder-box table{
+		width: 100%;
+	}
 	.game-chat{
 		width: 29.333333%;
 	}
@@ -248,12 +266,12 @@ p.chat-message{
 		margin-top: -37px; 
 	}
 }
-@media screen and (min-width: 990px){
-
-}
 @media screen and (min-width: 1024px){
 	.profile-menu img{
 		margin-left: 0;
+	}
+	.ladder-box table{
+		width: 90%;
 	}
 }
 @media screen and (min-width: 1200px){
@@ -262,5 +280,14 @@ p.chat-message{
 	}
 	.bottom-main{
 		padding: 0 50px;
+	}
+	.bottom-main p:nth-of-type(2){
+		margin-top: -37px;
+	}
+	.bottom-main p:nth-of-type(3){
+		margin-top: -37px;
+	}
+	.ladder-box table{
+		width: 100%;
 	}
 }
